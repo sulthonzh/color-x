@@ -9,10 +9,41 @@
     "colorx": "dist/cli.js"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "tsc -p tsconfig.build.json",
     "test": "node --test dist/test/*.test.js"
   },
-  "keywords": ["color", "colour", "rgb", "hex", "hsl", "hsv", "color-space", "wcag", "contrast", "palette", "zero-dependency"],
+  "keywords": [
+    "color",
+    "colour",
+    "rgb",
+    "hex",
+    "hsl",
+    "hsv",
+    "color-space",
+    "wcag",
+    "contrast",
+    "palette",
+    "zero-dependency"
+  ],
   "license": "MIT",
-  "author": "sulthonzh"
+  "author": "sulthonzh",
+  "files": [
+    "dist/src/",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sulthonzh/color-x.git"
+  },
+  "homepage": "https://github.com/sulthonzh/color-x#readme",
+  "bugs": {
+    "url": "https://github.com/sulthonzh/color-x/issues"
+  },
+  "devDependencies": {
+    "@types/node": "^26.0.0"
+  }
 }

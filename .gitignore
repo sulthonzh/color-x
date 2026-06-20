@@ -1,3 +1,12 @@
 node_modules/
 dist/
 *.log
+build/
+.env
+.env.*
+__pycache__/
+.venv/
+*.egg-info/
+.mypy_cache/
+.DS_Store
+coverage/
