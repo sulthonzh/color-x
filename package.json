@@ -2,15 +2,15 @@
   "name": "color-x",
   "version": "1.0.0",
   "description": "Zero-dependency color manipulation library — parse & convert hex/rgb/hsl/hsv, mix, lighten, darken, harmony colors, WCAG contrast, and more",
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
   "bin": {
-    "colorx": "dist/cli.js"
+    "colorx": "dist/src/cli.js"
   },
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
-    "test": "node --test dist/test/*.test.js"
+    "prepublishOnly": "npm run build",
+    "test": "npm run build && node --test dist/test/*.test.js"
   },
   "keywords": [
     "color",
